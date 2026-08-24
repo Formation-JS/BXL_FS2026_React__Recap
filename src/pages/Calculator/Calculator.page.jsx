@@ -8,6 +8,8 @@ export default function CalculatorPage() {
             <p>Ce calculateur vous permet de simulez vos dépences en calculant les frais de transport, d'hotel et divers</p>
             {/* TODO : Faire le composant... */}
 
+            <CalculatorCostForm />
+
         </section>
     );
 };
