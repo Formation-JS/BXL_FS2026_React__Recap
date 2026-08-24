@@ -1,0 +1,30 @@
+.header {
+    background-color: rebeccapurple;
+    color: gold;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 1ch;
+}
+
+.header-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1ch;
+
+    a {
+        text-decoration: none;
+        color: snow;
+    }
+
+    a:hover {
+        color: deeppink;
+        text-shadow: 
+            yellow 0.1ch 0.1ch 0.1ch,
+            yellow -0.1ch 0.1ch 0.1ch,
+            yellow -0.1ch -0.1ch 0.1ch,
+            yellow 0.1ch -0.1ch 0.1ch;
+    }
+}
