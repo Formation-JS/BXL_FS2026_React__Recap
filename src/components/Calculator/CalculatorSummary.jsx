@@ -1,4 +1,32 @@
-export default function CalculatorSummary({ costs = [], fuels= [] }) {
+export default function CalculatorSummary({ costs = [], fuels = [] }) {
+
+    //! Conversion des éléments de liste en élément affichable pour React
+    const displayCosts = costs.map(elem => (
+        <li key={elem.id}>
+            {elem.source} : {elem.cost.toLocaleString('fr-be', { style: 'currency', currency: 'EUR' })}
+        </li>
+    ));
+
+    const displayFuels = fuels.map(elem => (
+        <CalculatorSummaryFuelLine {...elem} key={elem.id} />
+    ));
+
+    //! Calcul du prix total (divers et trajet)
+    //v1) Calcul avec des boucles
+    /*
+    let totalPrice = -0;
+    for(const elem of costs) {
+        totalPrice += elem.cost;
+    } 
+    for(const elem of fuels) {
+        totalPrice += elem.price;
+    }
+    */
+
+    //v2) Utilisation de la méthode sumPrecise (Nouveauté 2026 :o)
+    let totalPrice = Math.sumPrecise(costs.map(elem => elem.cost));
+    totalPrice += Math.sumPrecise(fuels.map(elem => elem.price));
+
 
     return (
         <div>
@@ -6,20 +34,24 @@ export default function CalculatorSummary({ costs = [], fuels= [] }) {
             <ul>
                 <li>
                     Divers
-                    <ul>
-                        <li>Exemple 1 : 42.00 €</li>
-                        <li>Exemple 2 : 100.00 €</li>
-                    </ul>
+                    <ul>{displayCosts}</ul>
                 </li>
                 <li>
-                    Transport
-                    <ul>
-                        <li>500km : 51,98 €</li>
-                    </ul>
+                    Trajet
+                    <ul>{displayFuels}</ul>
                 </li>
             </ul>
-            <p>Total des dépences 193.98 €</p>
+            <p>Total des dépences {totalPrice.toLocaleString('fr-be', { style: 'currency', currency: 'EUR' })}</p>
         </div>
+    );
+}
+
+function CalculatorSummaryFuelLine({ distance, price, message }) {
+
+    return (
+        <li>
+            {distance}km : {price.toLocaleString('fr-be', { style: 'currency', currency: 'EUR'})} {message}
+        </li>
     )
 }
 

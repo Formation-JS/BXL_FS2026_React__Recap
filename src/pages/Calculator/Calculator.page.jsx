@@ -15,9 +15,46 @@ export default function CalculatorPage() {
         // Modification du state pour ajouter les nouvelles données
         setCostData(prevCostData => [...prevCostData, cost]);
     };
-    
-    const handleNewFuel = (data) => {
-        const fuel = { id: nanoid(), ...data };
+
+    const handleNewFuel = ({ distance, carburant, conduite }) => {
+        // ↑ Le parametre "data" est destructuré pour utilisé directement les valeurs de l'objet
+
+        // Calcul du prix
+        let price;
+        let message = null;
+
+        if (carburant !== 'electrique') {
+            // let conso;
+            // switch (conduite) {
+            //     case 'eco':
+            //         conso = 3.5;
+            //         break;
+            //     case 'confort':
+            //         conso = 4.5;
+            //         break;
+            //     default:
+            //         conso = 10;
+            //         break;
+            // }
+            const conso = (conduite === 'eco') ? 3.5
+                : (conduite === 'confort') ? 4.5
+                : 10;
+
+            const carbuPrice = (carburant === 'essence') ? 2.1340 : 2.3150;
+            price = (distance / 100) * conso * carbuPrice;
+        }
+        else {
+            price = 0;
+            message = '(Calcul pour les éléctriques non supporté)';
+        }
+
+        // L'ajout dans la liste avec le prix pré-calculé
+        const fuel = {
+            id: nanoid(),
+            distance,
+            price,
+            message
+        };
         setFuelData(prevFuelData => [...prevFuelData, fuel]);
     };
 
