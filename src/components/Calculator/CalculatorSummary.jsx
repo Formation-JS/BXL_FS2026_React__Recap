@@ -1,6 +1,26 @@
-export default function CalculatorSummary() {
+export default function CalculatorSummary({ costs = [], fuels= [] }) {
 
-    throw new Error('Ceci est votre exercice :o');
+    return (
+        <div>
+            <p>Résumé des dépences</p>
+            <ul>
+                <li>
+                    Divers
+                    <ul>
+                        <li>Exemple 1 : 42.00 €</li>
+                        <li>Exemple 2 : 100.00 €</li>
+                    </ul>
+                </li>
+                <li>
+                    Transport
+                    <ul>
+                        <li>500km : 51,98 €</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Total des dépences 193.98 €</p>
+        </div>
+    )
 }
 
 /* 
