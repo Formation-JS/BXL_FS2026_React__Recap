@@ -1,4 +1,5 @@
 import CalculatorCostForm from '../../components/Calculator/CalculatorCostForm';
+import CalculatorFuelForm from '../../components/Calculator/CalculatorFuelForm';
 
 export default function CalculatorPage() {
 
@@ -9,6 +10,7 @@ export default function CalculatorPage() {
             {/* TODO : Faire le composant... */}
 
             <CalculatorCostForm />
+            <CalculatorFuelForm />
 
         </section>
     );
