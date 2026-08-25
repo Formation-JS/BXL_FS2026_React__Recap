@@ -1,6 +1,6 @@
 import { useActionState } from 'react';
 
-export default function CalculatorFuelForm() {
+export default function CalculatorFuelForm({ onNewFuelSubmit = () => {} }) {
 
     const handleFuelSubmit = async (prevState, formData) => {
 
@@ -21,6 +21,9 @@ export default function CalculatorFuelForm() {
                 fix: new Date()
             };
         }
+
+        //! Envoyer les données au parents
+        onNewFuelSubmit({ distance, conduite, carburant });
 
         return {
             error: null,

@@ -1,6 +1,6 @@
 import { useActionState } from 'react';
 
-export default function CalculatorCostForm() {
+export default function CalculatorCostForm({ onNewCostSubmit = () => {} }) {
 
     //! Traitement du submit du formulaire
     const handleCostSubmit = async (_prevState, formData) => {
@@ -20,7 +20,8 @@ export default function CalculatorCostForm() {
             }
         }
 
-        // TODO Envoyer un event au composant parent
+        //! Envoyer un event au composant parent
+        onNewCostSubmit({ source, cost });
 
         // Renvoi le state quand le formulaire a été validé
         return {
