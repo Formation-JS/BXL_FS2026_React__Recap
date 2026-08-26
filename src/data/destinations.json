@@ -1,0 +1,162 @@
+[
+  {
+    "id": "kyoto-jp",
+    "name": "Kyoto",
+    "country": "Japon",
+    "desc": "Ancienne capitale impériale, Kyoto concentre plus de mille temples, des jardins secs et les ruelles de bois du quartier de Gion. La ville se parcourt à pied ou à vélo, au rythme des saisons : cerisiers en avril, érables rouges en novembre. Base idéale pour rayonner vers Nara et Osaka en moins d'une heure de train.",
+    "shortDesc": "Temples, jardins zen et ruelles de geishas.",
+    "price": 1890,
+    "tags": ["culture", "patrimoine", "gastronomie", "citytrip"],
+    "activities": [
+      { "id": "kyoto-act-1", "name": "Sentier des mille torii du Fushimi Inari", "duration": 150 },
+      { "id": "kyoto-act-2", "name": "Cérémonie du thé dans une maison de machiya", "duration": 90 },
+      { "id": "kyoto-act-3", "name": "Bambouseraie d'Arashiyama et villa Okochi Sanso", "duration": 180 },
+      { "id": "kyoto-act-4", "name": "Atelier cuisine : ramen et gyoza", "duration": 120 }
+    ],
+    "coord": { "lat": 35.0116, "lon": 135.7681 }
+  },
+  {
+    "id": "marrakech-ma",
+    "name": "Marrakech",
+    "country": "Maroc",
+    "desc": "La ville rouge mêle le vacarme de la place Jemaa el-Fna, le calme des riads à patio et les couleurs du jardin Majorelle. Le souk de la médina se visite le matin, avant la chaleur, et l'Atlas se rejoint en deux heures de route pour une bouffée d'air frais.",
+    "shortDesc": "Souks, riads et portes du désert.",
+    "price": 690,
+    "tags": ["desert", "culture", "gastronomie", "court-sejour"],
+    "activities": [
+      { "id": "marrakech-act-1", "name": "Visite guidée de la médina et des souks", "duration": 180 },
+      { "id": "marrakech-act-2", "name": "Hammam traditionnel et gommage au savon noir", "duration": 120 },
+      { "id": "marrakech-act-3", "name": "Excursion dans la vallée de l'Ourika", "duration": 480 },
+      { "id": "marrakech-act-4", "name": "Nuit sous tente dans le désert d'Agafay", "duration": 900 }
+    ],
+    "coord": { "lat": 31.6295, "lon": -7.9811 }
+  },
+  {
+    "id": "reykjavik-is",
+    "name": "Reykjavík",
+    "country": "Islande",
+    "desc": "Plus petite capitale d'Europe, Reykjavík sert de camp de base à un pays de volcans, de geysers et de glaciers. En hiver, les nuits longues favorisent les aurores boréales ; en été, le soleil de minuit permet de rouler sur la route circulaire jusqu'à 23 h.",
+    "shortDesc": "Volcans, sources chaudes et aurores boréales.",
+    "price": 1450,
+    "tags": ["nature", "aventure", "grand-nord", "roadtrip"],
+    "activities": [
+      { "id": "reykjavik-act-1", "name": "Circuit du Cercle d'Or (Geysir, Gullfoss, Þingvellir)", "duration": 540 },
+      { "id": "reykjavik-act-2", "name": "Bains géothermiques du Blue Lagoon", "duration": 180 },
+      { "id": "reykjavik-act-3", "name": "Chasse aux aurores boréales en 4x4", "duration": 240 },
+      { "id": "reykjavik-act-4", "name": "Observation des baleines depuis le vieux port", "duration": 195 }
+    ],
+    "coord": { "lat": 64.1466, "lon": -21.9426 }
+  },
+  {
+    "id": "cusco-pe",
+    "name": "Cusco et la vallée sacrée",
+    "country": "Pérou",
+    "desc": "Perchée à 3 400 m, l'ancienne capitale inca garde ses murs cyclopéens sous les façades coloniales. Deux jours d'acclimatation sont nécessaires avant de rejoindre Ollantaytambo, le train d'Aguas Calientes puis le Machu Picchu au lever du jour.",
+    "shortDesc": "Sur les traces des Incas jusqu'au Machu Picchu.",
+    "price": 2350,
+    "tags": ["randonnee", "patrimoine", "montagne", "aventure"],
+    "activities": [
+      { "id": "cusco-act-1", "name": "Visite du Machu Picchu au lever du soleil", "duration": 300 },
+      { "id": "cusco-act-2", "name": "Marché de Pisac et ruines d'Ollantaytambo", "duration": 420 },
+      { "id": "cusco-act-3", "name": "Randonnée à la montagne arc-en-ciel Vinicunca", "duration": 600 },
+      { "id": "cusco-act-4", "name": "Atelier tissage avec une communauté quechua", "duration": 150 }
+    ],
+    "coord": { "lat": -13.532, "lon": -71.9675 }
+  },
+  {
+    "id": "le-cap-za",
+    "name": "Le Cap",
+    "country": "Afrique du Sud",
+    "desc": "Coincée entre la Montagne de la Table et deux océans, Le Cap combine plages, vignobles et faune sauvage à moins d'une heure du centre. La route panoramique de Chapman's Peak mène jusqu'au Cap de Bonne-Espérance, et Stellenbosch offre les meilleurs domaines viticoles du pays.",
+    "shortDesc": null,
+    "price": 1620,
+    "tags": ["plage", "nature", "vignoble", "safari"],
+    "activities": [
+      { "id": "lecap-act-1", "name": "Ascension de la Montagne de la Table en téléphérique", "duration": 210 },
+      { "id": "lecap-act-2", "name": "Route côtière jusqu'au Cap de Bonne-Espérance", "duration": 480 },
+      { "id": "lecap-act-3", "name": "Dégustation dans les vignobles de Stellenbosch", "duration": 300 },
+      { "id": "lecap-act-4", "name": "Colonie de manchots de Boulders Beach", "duration": 120 }
+    ],
+    "coord": { "lat": -33.9249, "lon": 18.4241 }
+  },
+  {
+    "id": "queenstown-nz",
+    "name": "Queenstown",
+    "country": "Nouvelle-Zélande",
+    "desc": "Capitale mondiale autoproclamée des sports extrêmes, Queenstown s'étire au bord du lac Wakatipu face aux Remarkables. Saut à l'élastique, jet-boat et parapente en été ; ski et via ferrata en hiver, avec les fjords du Milford Sound à une journée de route.",
+    "shortDesc": "Adrénaline au bord du lac Wakatipu.",
+    "price": 3100,
+    "tags": ["aventure", "montagne", "sport", "roadtrip"],
+    "activities": [
+      { "id": "queenstown-act-1", "name": "Saut à l'élastique du pont de Kawarau", "duration": 180 },
+      { "id": "queenstown-act-2", "name": "Croisière dans les fjords du Milford Sound", "duration": 780 },
+      { "id": "queenstown-act-3", "name": "Randonnée du Ben Lomond Track", "duration": 420 },
+      { "id": "queenstown-act-4", "name": "Jet-boat dans les gorges de la Shotover", "duration": 90 }
+    ],
+    "coord": { "lat": -45.0312, "lon": 168.6626 }
+  },
+  {
+    "id": "santorin-gr",
+    "name": "Santorin",
+    "country": "Grèce",
+    "desc": "Née de l'effondrement d'un volcan, l'île dresse ses villages blancs au sommet d'une caldeira de 300 m. Le sentier de crête entre Fira et Oia se marche tôt le matin, et les plages de sable noir de Perissa restent nettement plus calmes que les terrasses du nord.",
+    "shortDesc": "Villages blancs suspendus au-dessus de la caldeira.",
+    "price": 980,
+    "tags": ["plage", "romantique", "iles", "gastronomie"],
+    "activities": [
+      { "id": "santorin-act-1", "name": "Randonnée de Fira à Oia sur la crête de la caldeira", "duration": 240 },
+      { "id": "santorin-act-2", "name": "Croisière en catamaran et bains de sources chaudes", "duration": 300 },
+      { "id": "santorin-act-3", "name": "Dégustation d'assyrtiko dans un domaine volcanique", "duration": 120 },
+      { "id": "santorin-act-4", "name": "Site archéologique d'Akrotiri", "duration": 105 }
+    ],
+    "coord": { "lat": 36.4167, "lon": 25.4333 }
+  },
+  {
+    "id": "banff-ca",
+    "name": "Banff",
+    "country": "Canada",
+    "desc": "Premier parc national canadien, Banff aligne lacs turquoise, glaciers et sommets de calcaire dans les Rocheuses de l'Alberta. La promenade des Glaciers relie Lake Louise à Jasper sur 230 km, avec des chances sérieuses de croiser wapitis et ours noirs.",
+    "shortDesc": "Lacs turquoise et sommets des Rocheuses.",
+    "price": 2050,
+    "tags": ["nature", "randonnee", "montagne", "faune"],
+    "activities": [
+      { "id": "banff-act-1", "name": "Canoë sur le lac Moraine", "duration": 150 },
+      { "id": "banff-act-2", "name": "Promenade des Glaciers jusqu'au champ de glace Columbia", "duration": 600 },
+      { "id": "banff-act-3", "name": "Randonnée du Plain of Six Glaciers", "duration": 330 },
+      { "id": "banff-act-4", "name": "Sources thermales de Banff Upper Hot Springs", "duration": 90 }
+    ],
+    "coord": { "lat": 51.1784, "lon": -115.5708 }
+  },
+  {
+    "id": "baie-halong-vn",
+    "name": "Baie d'Halong",
+    "country": "Viêt Nam",
+    "desc": "Près de 1 600 pitons karstiques émergent d'une mer d'émeraude, à trois heures de route de Hanoï. La baie se découvre en jonque sur deux jours, en s'écartant des circuits classiques vers la baie de Lan Ha, plus tranquille et propice au kayak entre les grottes.",
+    "shortDesc": null,
+    "price": 1290,
+    "tags": ["mer", "nature", "croisiere", "asie"],
+    "activities": [
+      { "id": "halong-act-1", "name": "Croisière de deux jours en jonque traditionnelle", "duration": 1440 },
+      { "id": "halong-act-2", "name": "Kayak dans les grottes de la baie de Lan Ha", "duration": 180 },
+      { "id": "halong-act-3", "name": "Grotte de Sung Sot (grotte de la Surprise)", "duration": 90 },
+      { "id": "halong-act-4", "name": "Visite d'un village de pêcheurs flottant", "duration": 120 }
+    ],
+    "coord": { "lat": 20.9101, "lon": 107.1839 }
+  },
+  {
+    "id": "petra-jo",
+    "name": "Petra",
+    "country": "Jordanie",
+    "desc": "Taillée dans le grès rose par les Nabatéens, Petra se révèle au bout du Siq, un canyon d'un kilomètre qui débouche sur la façade du Trésor. Comptez deux jours pour atteindre le Monastère et le Haut Lieu du Sacrifice, avant de bivouaquer dans le désert du Wadi Rum.",
+    "shortDesc": "La cité nabatéenne taillée dans le grès rose.",
+    "price": 1180,
+    "tags": ["patrimoine", "desert", "randonnee", "culture"],
+    "activities": [
+      { "id": "petra-act-1", "name": "Traversée du Siq jusqu'au Trésor", "duration": 240 },
+      { "id": "petra-act-2", "name": "Montée des 800 marches vers le Monastère", "duration": 210 },
+      { "id": "petra-act-3", "name": "Petra by Night aux chandelles", "duration": 120 },
+      { "id": "petra-act-4", "name": "Bivouac bédouin et 4x4 dans le Wadi Rum", "duration": 1080 }
+    ],
+    "coord": { "lat": 30.3285, "lon": 35.4444 }
+  }
+]
