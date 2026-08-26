@@ -31,7 +31,7 @@ function DestinationListItem({ id, name, country, desc, shortDesc, price, tags, 
             <p>{name} <span className='country'>({country})</span></p>
             <DestinationDescription desc={desc} shortDesc={shortDesc} />
             <p>Prix du voyage : {price.toLocaleString('fr-be', { style: 'currency', currency: 'EUR' })}</p>
-            <p>Tags : {tags.map(tag => <span className='tag'>#{tag} </span>)}</p>
+            <p>Tags : {tags.map(tag => <span className='tag' key={tag}>#{tag} </span>)}</p>
             <DestinationActivities activities={activities} />
             <button onClick={handleSelectDest}>
                 Selectionner la destination
@@ -59,7 +59,9 @@ function DestinationActivities({ activities = [] }) {
             <p>Activités possibles : </p>
             <ul>
                 {activities.map(activity => (
-                    <li>{activity.name} : {activity.duration.toLocaleString('fr-be', { style: 'unit', unit: 'minute' })}</li>
+                    <li key={activity.id}>
+                        {activity.name} : {activity.duration.toLocaleString('fr-be', { style: 'unit', unit: 'minute' })}
+                    </li>
                 ))}
             </ul>
         </>
