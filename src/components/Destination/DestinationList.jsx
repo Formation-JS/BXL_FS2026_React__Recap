@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import style from './Destination.module.css';
 
 export default function DestinationList({ destinations = [], onSelectDest = () => {} }) {
 
@@ -8,13 +9,15 @@ export default function DestinationList({ destinations = [], onSelectDest = () =
     return (
         <section>
             <h3>Listing des destinations</h3>
-            {destinations.map(destination => (
-                <DestinationListItem
+            <div  className={style['dest-list']}>
+                {destinations.map(destination => (
+                    <DestinationListItem
                     key={destination.id}
                     onSelectDest={onSelectDest}
                     {...destination}
-                />
-            ))}
+                    />
+                ))}
+            </div>
         </section>
     );
 }
@@ -26,12 +29,11 @@ function DestinationListItem({ id, name, country, desc, shortDesc, price, tags, 
     };
 
     return (
-        <article className='dest'>
-            <br />
-            <p>{name} <span className='country'>({country})</span></p>
+        <article className={style['dest-item']}>
+            <p>{name} <span className={style['country']}>({country})</span></p>
             <DestinationDescription desc={desc} shortDesc={shortDesc} />
             <p>Prix du voyage : {price.toLocaleString('fr-be', { style: 'currency', currency: 'EUR' })}</p>
-            <p>Tags : {tags.map(tag => <span className='tag' key={tag}>#{tag} </span>)}</p>
+            <p>Tags : {tags.map(tag => <span className={style['tag']} key={tag}>{tag}</span>)}</p>
             <DestinationActivities activities={activities} />
             <button onClick={handleSelectDest}>
                 Selectionner la destination

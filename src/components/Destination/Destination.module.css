@@ -1,0 +1,55 @@
+.dest-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.dest-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+
+    border: 0.1ch solid rebeccapurple;
+    border-radius: 1em;
+    padding: 0.5em;
+    background-color: hsla(270, 50%, 40%, 0.1);
+
+    p:first-child {
+        font-size: 1.3em;
+        color: crimson;
+        font-family: 'Comic sans MS';
+    }
+    p:not(:first-child), ul {
+        color: deeppink;
+    }
+
+    button {
+        background-color: navy;
+        color: gold;
+        font-size: 1.3em;
+        border: none;
+        border-radius: 0.3em;
+    }
+}
+
+
+.country {
+    color: rebeccapurple;
+}
+
+.tag {
+    background-color: deeppink;
+    color: navy;
+    padding: 0.5ch 1ch;
+    display: inline-block;
+    border-radius: 0.5ch;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.tag::before {
+    content: '#';
+}
+.tag:not(:last-child) {
+    margin-right: 1ch;
+}
